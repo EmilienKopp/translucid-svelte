@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "Svelte 5 adapter for the Splitstack Translucid real-time sync package",
     "type": "module",
+    "repository": "https://github.com/EmilienKopp/translucid-svelte",
     "source": "./src/translucid.svelte.ts",
     "svelte": "./dist/translucid.svelte.js",
     "exports": {
