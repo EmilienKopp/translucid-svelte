@@ -1,0 +1,38 @@
+{
+    "name": "translucid-svelte",
+    "version": "0.1.0",
+    "description": "Svelte 5 adapter for the Splitstack Translucid real-time sync package",
+    "type": "module",
+    "source": "./src/translucid.svelte.ts",
+    "svelte": "./dist/translucid.svelte.js",
+    "exports": {
+        ".": {
+            "types": "./dist/translucid.svelte.d.ts",
+            "svelte": "./dist/translucid.svelte.js"
+        }
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "build": "svelte-package --input src",
+        "dev": "svelte-package --input src --watch",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "svelte": "^5.0.0",
+        "laravel-echo": "^2.0.0"
+    },
+    "devDependencies": {
+        "@sveltejs/package": "^2.5.7",
+        "@sveltejs/vite-plugin-svelte": "^7.0.0",
+        "svelte": "^5.53.5",
+        "svelte-check": "^4.4.3",
+        "tslib": "^2.8.1",
+        "typescript": "^5.9.3"
+    },
+    "license": "ISC",
+    "author": "EmilienKopp <emilien.kopp@gmail.com>"
+}
