@@ -223,7 +223,6 @@ export class Translucid {
         // and duplicate listeners can never accumulate across re-watches.
         channel.stopListening(updateSub);
         channel.listen(updateSub, (event: TranslucidUpdatedPayload) => {
-            console.log('Channel received update event:', event, channel);
             const entry = this.retrieveEntryFromSub(updateSub);
             if (!entry) {
                 console.warn('No reference found for', updateSub);
